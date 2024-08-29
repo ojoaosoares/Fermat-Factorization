@@ -57,6 +57,15 @@ Let's factorize $N = 5959$ using Fermat's method.
 
 Thus, $5959 = 59 \times 101$.
 
+## Main Program Usage
+
+The main program implementing Fermat's factorization method takes an odd integer $N$ as input and outputs the factor $(a + b)$. This factor is one of the two factors of $N$, the other being $(a - b)$.
+
+- **Input**: An odd integer $N$.
+- **Output**: The factor $(a + b)$, where $N = (a - b) \times (a + b)$.
+
+For instance, given the input $N = 5959$, the program would output $101$.
+
 ## Applications and Limitations
 
 Fermat's factorization method is most efficient when the factors of $N$ are close together. If the factors are far apart, the method becomes inefficient compared to other factorization algorithms, like the Pollard rho algorithm or the quadratic sieve.
@@ -64,4 +73,5 @@ Fermat's factorization method is most efficient when the factors of $N$ are clos
 ## References
 
 - Wikipedia: [Fermat's factorization method](https://en.wikipedia.org/wiki/Fermat%27s_factorization_method)
-- Books and research papers on integer factorization and number theory.
+- *Números Inteiros e Criptografia RSA*.
+- Other books and research papers on integer factorization and number theory.
