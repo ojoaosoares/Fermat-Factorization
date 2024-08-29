@@ -3,6 +3,15 @@
 
 int main()
 {
+    std::cout << "N: ";
     mpz_class n; std::cin >> n;
-    std::cout << fermat_factorization(n) << '\n';
+
+    try
+    {
+        std::cout << fermat_factorization(n) << '\n';
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }    
 }
